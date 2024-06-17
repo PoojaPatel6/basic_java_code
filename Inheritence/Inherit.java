@@ -1,65 +1,41 @@
-package Inheritence;
+class Nokia1{
+int x,y;
 
-class Noodle {
-    double lengthInCentimeters;
-    String shape;
-    String texture = "brittle";
-    
-    public void cook() {
-      
-      this.texture = "cooked";
-      
-    }
-  }
-  class Spaghetti extends Noodle{
+void f1(){
 
-   
-  }
+System.out.println("Parent function1 is executed.");
 
-  public class Inherit{
-    public static void main(String[] args) {
-           Spaghetti spaghettiPomodoro = new Spaghetti();
-      System.out.println(spaghettiPomodoro.texture);   
-    }
-  }
+}
+
+void f2(){
 
 
+System.out.println("Parent function2 is executed.");
+
+}
+
+}
+class Nokia2 extends Nokia1 {
 
 
+int z;
 
+void f3(){
 
+System.out.println("child function1 is executed.");
 
+}
+}
 
+class Inherit{
 
-  // class Noodle {
-  //   double lengthInCentimeters;
-  //   double widthInCentimeters;
-  //   String shape;
-  //   String ingredients;
-  //   String texture = "brittle";
-      
-  //   Noodle(double lenInCent, double wthInCent, String shp, String ingr) {
-        
-  //     this.lengthInCentimeters = lenInCent;
-  //     this.widthInCentimeters = wthInCent;
-  //     this.shape = shp;
-  //     this.ingredients = ingr;
-        
-  //   }
-      
-  //   public void cook() {
-  //     this.texture = "cooked";
-  //   }
-      
-  // }
-  // class Pho extends Noodle {
-  //   public Pho(){
-  //      super(30.0, 0.64, "flat", "rice flour");
-  //   }
-  // }
-  // public class Main{
-  //   public static void main(String[] args) {
-  //           Pho phoChay = new Pho();
-  //       System.out.println(phoChay.shape);
-  //   }
-  // }
+public static void main(String[]args){
+Nokia2 n1 = new Nokia2();
+n1.f1();
+
+n1.f2();
+n1.f3();
+
+}
+
+}
